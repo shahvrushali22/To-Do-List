@@ -1,0 +1,182 @@
+body{
+    background: #eee;
+}
+.container{
+    width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: solid 2px #ccc;
+/*    height: 40px;*/
+    
+}
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.fixedContainer{
+/*    always remember fixed height container has to set overflow to auto so that auto scrollbar gets enabled*/
+    height: 400px;
+    overflow: auto;
+}
+.box{
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: #000;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+#box1{
+    background: #fc3;
+    
+}
+#box2{
+    background: #ac3;
+    
+}
+#box3{
+    background: blue;
+    
+}
+
+
+/*droppable*/
+.bigbox{
+    color: white;
+    background: black;
+    border: solid 1px #000;
+    height: 300px;
+    width: 400px;
+    line-height: 300px;
+    text-align: center;
+    margin: 40px auto;
+    padding: 40px auto;
+    
+}
+
+ul{
+    width: 48%;
+    float: left;
+    margin: 0;
+    padding: 0 1%;
+    list-style: none;
+}
+ul li{
+    background: #eee;
+    padding: 10px;
+    margin: 2px 0;
+    border: solid 1px #ccc;
+}
+ul li:hover{
+    background: #ddd;
+    border-color: #aaa;
+    cursor: pointer;
+}
+ul li:active{
+    transform: rotate(2deg);
+    background: #ccc;
+    border-color: #999;
+    
+}
+
+.placeholderBox{
+    background: #fc3;
+    height: 20px;
+    border: solid 2px #888;
+}
+
+/*Style for To-Do List*/
+#todoListWrapper{
+    width: 960px;
+    text-align: center;
+}
+
+#todoList ul{
+    width: 14.28%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+}
+
+#todoList li{
+    background: none;
+    padding: 5px;
+    border: none;
+    margin: 0;
+    text-align: left;
+    font-size: 12px;
+}
+
+#todoList li:hover{
+    background: #eee;
+}
+
+#todoList li.listTitle{
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-right: solid 1px white;
+    font-size: 14px;
+}
+
+#todoList li.listTitle:hover,
+#todoList li.listTitle:active{
+    cursor: default;
+    transform: none;
+}
+
+#todoList .emptySpace{
+    background: #fc3;
+    border: dashed 1px #777;
+    height: 10px;
+}
+
+#todoList li.addItem{
+    display: none;
+    position: absolute;
+    top: 0;
+    background: none;
+}
+#todoList ul:hover li.addItem{
+    display: block;
+}
+
+#todoList li.addItem input{
+    width: 100%;
+    padding:  4px;
+    box-sizing: border-box;
+    
+}
+#todoList li.addItem:active{
+    transform: none;
+}
+
+#trash{
+    background: rgba(178, 73, 38, 0.7);
+    color: white;
+    height: 200px;
+    width: 400px;
+    margin: 50px auto 0;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
